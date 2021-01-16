@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82807B7E-F4F8-4CDD-97CD-296C63A062FD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>MachineLearning.DataModeling</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MachineLearning.DataModeling.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MachineLearning.DataModeling.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="API\Spreads\DHService.svc" />
+    <Content Include="API\XRates\DHXRateservice.svc" />
+    <Content Include="appImgs\10_max.jpg" />
+    <Content Include="appImgs\10_min.jpg" />
+    <Content Include="appImgs\11_max.jpg" />
+    <Content Include="appImgs\11_min.jpg" />
+    <Content Include="appImgs\12_max.jpg" />
+    <Content Include="appImgs\12_min.jpg" />
+    <Content Include="appImgs\13_max.jpg" />
+    <Content Include="appImgs\13_min.jpg" />
+    <Content Include="appImgs\14_max.jpg" />
+    <Content Include="appImgs\14_min.jpg" />
+    <Content Include="appImgs\15_max.jpg" />
+    <Content Include="appImgs\15_min.jpg" />
+    <Content Include="appImgs\16_max.jpg" />
+    <Content Include="appImgs\16_min.jpg" />
+    <Content Include="appImgs\17_max.jpg" />
+    <Content Include="appImgs\17_min.jpg" />
+    <Content Include="appImgs\18_max.jpg" />
+    <Content Include="appImgs\18_min.jpg" />
+    <Content Include="appImgs\19_max.jpg" />
+    <Content Include="appImgs\19_min.jpg" />
+    <Content Include="appImgs\1_max.jpg" />
+    <Content Include="appImgs\1_min.jpg" />
+    <Content Include="appImgs\20_max.jpg" />
+    <Content Include="appImgs\20_min.jpg" />
+    <Content Include="appImgs\21_max.jpg" />
+    <Content Include="appImgs\21_min.jpg" />
+    <Content Include="appImgs\22_max.jpg" />
+    <Content Include="appImgs\22_min.jpg" />
+    <Content Include="appImgs\23_max.jpg" />
+    <Content Include="appImgs\23_min.jpg" />
+    <Content Include="appImgs\24_max.jpg" />
+    <Content Include="appImgs\24_min.jpg" />
+    <Content Include="appImgs\25_max.jpg" />
+    <Content Include="appImgs\25_min.jpg" />
+    <Content Include="appImgs\26_max.jpg" />
+    <Content Include="appImgs\26_min.jpg" />
+    <Content Include="appImgs\27_max.jpg" />
+    <Content Include="appImgs\27_min.jpg" />
+    <Content Include="appImgs\28_max.jpg" />
+    <Content Include="appImgs\28_min.jpg" />
+    <Content Include="appImgs\29_max.jpg" />
+    <Content Include="appImgs\29_min.jpg" />
+    <Content Include="appImgs\2_max.jpg" />
+    <Content Include="appImgs\2_min.jpg" />
+    <Content Include="appImgs\30_max.jpg" />
+    <Content Include="appImgs\30_min.jpg" />
+    <Content Include="appImgs\31_max.jpg" />
+    <Content Include="appImgs\31_min.jpg" />
+    <Content Include="appImgs\32_max.jpg" />
+    <Content Include="appImgs\32_min.jpg" />
+    <Content Include="appImgs\33_max.jpg" />
+    <Content Include="appImgs\33_min.jpg" />
+    <Content Include="appImgs\34_max.jpg" />
+    <Content Include="appImgs\34_min.jpg" />
+    <Content Include="appImgs\3_max.jpg" />
+    <Content Include="appImgs\3_min.jpg" />
+    <Content Include="appImgs\4_max.jpg" />
+    <Content Include="appImgs\4_min.jpg" />
+    <Content Include="appImgs\5_max.jpg" />
+    <Content Include="appImgs\5_min.jpg" />
+    <Content Include="appImgs\6_max.jpg" />
+    <Content Include="appImgs\6_min.jpg" />
+    <Content Include="appImgs\7_max.jpg" />
+    <Content Include="appImgs\7_min.jpg" />
+    <Content Include="appImgs\8_max.jpg" />
+    <Content Include="appImgs\8_min.jpg" />
+    <Content Include="appImgs\9_max.jpg" />
+    <Content Include="appImgs\9_min.jpg" />
+    <Content Include="codebase\dataSource.html" />
+    <Content Include="codebase\DMControlledBrowser.htm" />
+    <Content Include="codebase\default.aspx" />
+    <Content Include="codebase\feedback.aspx" />
+    <Content Include="codebase\scripts\export.js" />
+    <Content Include="codebase\scripts\feedback.js" />
+    <Content Include="codebase\register.html" />
+    <Content Include="codebase\scripts\default.js" />
+    <Content Include="codebase\scripts\tags.js" />
+    <Content Include="codebase\tags.aspx" />
+    <Content Include="FavIcon\faviconV10.ico" />
+    <Content Include="framework\JsonServices\data\GetFromDataBase.aspx" />
+    <Content Include="framework\JsonServices\data\SaveToDataBase.aspx" />
+    <Content Include="framework\JsonServices\utilities\Export.aspx" />
+    <Content Include="framework\JsonServices\utilities\FileManagement.aspx" />
+    <Content Include="framework\JsonServices\utilities\ManageSession.aspx" />
+    <Content Include="framework\JsonServices\utilities\SendMail.aspx" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\calendar.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\calendar.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\calendar_init.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\event.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\img\callt.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\img\calrt.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\img\calx.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\license.txt" />
+    <Content Include="plugins\dhtmlxGrid\codebase\calendar\YAHOO.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\dhtmlxcommon.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\dhtmlxcommon_debug.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\dhtmlxgrid.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\dhtmlxgrid.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\dhtmlxgridcell.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\dhtmlxgrid_skins.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_calc.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_3but.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_acheck.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_calck.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_calendar.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_clist.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_cntr.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_combo.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_context.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_dec.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_dhxcalendar.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_grid.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_limit.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_link.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_liveedit.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_mro.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_passw.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_ra_str.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_sub_row.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_time.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_tree.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\excells\dhtmlxgrid_excell_wbut.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_data.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_deprecated.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_drag.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_fast.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_filter.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_form.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_group.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_hextra.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_hmenu.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_hmenu.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_json.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_keymap_access.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_keymap_excel.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_keymap_extra.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_markers.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_math.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_mcol.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_nxml.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_over.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_pgn.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_pgn_bricks.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_pivot.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_post.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_rowspan.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_selection.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_splt.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_srnd.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_ssc.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_start.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_undo.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlxgrid_validation.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlx_extdrag.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\ext\dhtmlx_extdrag.js" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_left.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_left_abs.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_left_abs_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_left_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_right.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_right_abs.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_right_abs_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\ar_right_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\blanc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\blank.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\combo_select.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\combo_select_dhx_black.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\combo_select_dhx_blue.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\combo_select_dhx_skyblue.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\blanc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\blank.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\folder.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\leaf.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\line.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\line1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\line2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\line3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\line4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\minus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\minus1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\minus2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\minus3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\minus4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\minus5.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\plus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\plus1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\plus2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\plus3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\plus4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\plus5.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\sort_asc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\csh_bluebooks\sort_desc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dhxgrid_dhx_black\hdr.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dhxgrid_dhx_blue\hdr.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dhxgrid_glassy_blue\ftr.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dhxgrid_glassy_blue\hdr.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dhx_dragColDivBg.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dyn_.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dyn_down.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\dyn_up.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\excelCellNum-bg.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\false.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\folder.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\green.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\header_bg.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\header_bg_60.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\blanc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\blank.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\book.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\books.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\books_cat.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\cd.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\dvd.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\dvds.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\item_chk0.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\item_chk0_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\item_chk1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\item_chk1_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\leaf.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\line.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\line1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\line2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\line3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\line4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\minus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\minus1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\minus2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\minus3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\minus4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\minus5.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\music.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\plus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\plus1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\plus2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\plus3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\plus4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\plus5.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\radio_chk0.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\radio_chk0_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\radio_chk1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\radio_chk1_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\sort_asc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_books\sort_desc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\blanc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\blank.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\folder.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\item_chk0.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\item_chk0_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\item_chk1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\item_chk1_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\leaf.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\line.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\line1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\line2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\line3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\line4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\minus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\minus1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\minus2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\minus3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\minus4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\minus5.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\plus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\plus1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\plus2.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\plus3.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\plus4.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\plus5.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\radio_chk0.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\radio_chk0_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\radio_chk1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\radio_chk1_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\sort_asc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\icons_greenfolders\sort_desc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\imageloaderror.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\item_chk0.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\item_chk0_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\item_chk1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\item_chk1_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\leaf.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\minus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\plus.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\radio_chk0.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\radio_chk0_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\radio_chk1.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\radio_chk1_dis.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\red.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\results.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\rowLineBg-DH_Datasource.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\rowLineBg.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\rowOver-bg.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinA_header.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinB_header.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinC_header.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinC_top_left.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinC_top_right.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinD_bottom_left.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinD_bottom_right.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skinD_header.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skin_light_header.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\skin_modern_header.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\sky_blue_grid.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\sky_blue_sel.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\sky_blue_sel2.png" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\sort_asc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\sort_desc.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\imgs\true.gif" />
+    <Content Include="plugins\dhtmlxGrid\codebase\skins\dhtmlxgrid_dhx_black.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\skins\dhtmlxgrid_dhx_blue.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\skins\dhtmlxgrid_dhx_skyblue.css" />
+    <Content Include="plugins\dhtmlxGrid\codebase\skins\dhtmlxgrid_DH_Datasource.css" />
+    <Content Include="plugins\dhtmlxGrid\readme.txt" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\dhtmlxcommon.js" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\dhtmlxtoolbar.js" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_bg_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_btnarrow.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_btnarrow_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_left.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_left_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_middle.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_middle_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_pen_def.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_pen_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_pen_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_right.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_black\dhxtoolbar_slider_right_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_bg_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_btnarrow.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_btnarrow_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_left.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_left_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_middle.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_middle_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_pen_def.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_pen_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_pen_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_right.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_blue\dhxtoolbar_slider_right_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_bg.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_bg_acccell.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_bg_layoutcell.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_bg_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_bg_pressed.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_btnarrow.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_btnarrow_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_sep_bg.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_left.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_left_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_middle.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_middle_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_pen_def.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_pen_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_pen_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_right.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_slider_right_dis.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_subbg_over.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\imgs\dhxtoolbar_dhx_skyblue\dhxtoolbar_subbg_sel.gif" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\skins\dhtmlxtoolbar_dhx_black.css" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\skins\dhtmlxtoolbar_dhx_blue.css" />
+    <Content Include="plugins\dhtmlxToolbar\codebase\skins\dhtmlxtoolbar_dhx_skyblue.css" />
+    <Content Include="plugins\dhtmlxToolbar\readme.txt" />
+    <Content Include="plugins\Jquery\js\jquery-ajaxfileupload.js" />
+    <Content Include="plugins\Jquery\js\jquery-1.4.3.js" />
+    <Content Include="plugins\Jquery\js\jquery-1.4.3.min.js" />
+    <Content Include="plugins\Jquery\js\jquery-cookie.js" />
+    <Content Include="plugins\Jquery\js\jquery-ui-1.8.5.custom.min.js" />
+    <Content Include="plugins\Jquery\js\jquery.validate.min.js" />
+    <Content Include="plugins\js\clientvalidationutils.js" />
+    <Content Include="plugins\js\json2.min.js" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-icons_222222_256x240.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-icons_454545_256x240.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-icons_888888_256x240.png" />
+    <Content Include="plugins\Jquery\themes\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="plugins\Jquery\themes\jquery.ui.all.css" />
+    <Content Include="plugins\Jquery\themes\jquery.ui.base.css" />
+    <Content Include="plugins\Jquery\themes\jquery.ui.theme.css" />
+    <Content Include="plugins\rating\img\cancel-off.png" />
+    <Content Include="plugins\rating\img\cancel-on.png" />
+    <Content Include="plugins\rating\img\coffee.png" />
+    <Content Include="plugins\rating\img\medal-off.png" />
+    <Content Include="plugins\rating\img\medal-on.png" />
+    <Content Include="plugins\rating\img\star-half.png" />
+    <Content Include="plugins\rating\img\star-off.png" />
+    <Content Include="plugins\rating\img\star-on.png" />
+    <Content Include="plugins\rating\index.html" />
+    <Content Include="plugins\rating\jquery.raty.js" />
+    <Content Include="plugins\rating\jquery.raty.min.js" />
+    <Content Include="plugins\rating\readme.txt" />
+    <Content Include="themes\emailtemplate\images\ContentTop.gif" />
+    <Content Include="themes\emailtemplate\images\MachineLearning-logo.gif" />
+    <Content Include="themes\emailtemplate\images\ML_DM-logo.gif" />
+    <Content Include="themes\emailtemplate\index.html" />
+    <Content Include="themes\imgs\Add.gif" />
+    <Content Include="themes\imgs\addFavorite.png" />
+    <Content Include="themes\imgs\arrow.gif" />
+    <Content Include="themes\imgs\benchmark-icon.png" />
+    <Content Include="themes\imgs\bodyBg.gif" />
+    <Content Include="themes\imgs\calButton.gif" />
+    <Content Include="themes\imgs\Delete.gif" />
+    <Content Include="themes\imgs\descIcon.png" />
+    <Content Include="themes\imgs\dialogBrowserActions-sp.png" />
+    <Content Include="themes\imgs\Edit.gif" />
+    <Content Include="themes\imgs\favorite.png" />
+    <Content Include="themes\imgs\feedbackIcon.gif" />
+    <Content Include="themes\imgs\formSep.png" />
+    <Content Include="themes\imgs\frameBg-sp.gif" />
+    <Content Include="themes\imgs\indicator-icon.png" />
+    <Content Include="themes\imgs\insidePaneTab-sp.gif" />
+    <Content Include="themes\imgs\kpi-icon.png" />
+    <Content Include="themes\imgs\loading.gif" />
+    <Content Include="themes\imgs\MachineLearning-logo.gif" />
+    <Content Include="themes\imgs\manageUsers.gif" />
+    <Content Include="themes\imgs\metadata-icon.png" />
+    <Content Include="themes\imgs\ML_DM-logo.gif" />
+    <Content Include="themes\imgs\moveIcon-sp.png" />
+    <Content Include="themes\imgs\overlayDialogCloseBtn.gif" />
+    <Content Include="themes\imgs\pagingBtn-sp.gif" />
+    <Content Include="themes\imgs\pickerCaptionBg.gif" />
+    <Content Include="themes\imgs\removeFavorite.png" />
+    <Content Include="themes\imgs\rowEdit.png" />
+    <Content Include="themes\imgs\search.gif" />
+    <Content Include="themes\imgs\spacer.gif" />
+    <Content Include="themes\imgs\submitBtnBg.gif" />
+    <Content Include="themes\imgs\tagIcon.png" />
+    <Content Include="themes\imgs\topBarBg-sp.gif" />
+    <Content Include="themes\imgs\topBarMenu-Icon.gif" />
+    <Content Include="themes\imgs\topBarMenuLink-Icon.gif" />
+    <Content Include="themes\imgs\topBarMenuLink-sp.png" />
+    <Content Include="themes\imgs\topNav-sp.gif" />
+    <Content Include="themes\imgs\topNav-sp.png" />
+    <Content Include="themes\imgs\viewBtn-sp.gif" />
+    <Content Include="themes\styles\main.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\Spreads\DataContract.vb" />
+    <Compile Include="API\Spreads\DHService.vb" />
+    <Compile Include="API\Spreads\IDHService.vb" />
+    <Compile Include="API\Spreads\MessageContract.vb" />
+    <Compile Include="API\Spreads\SpreadsData.vb" />
+    <Compile Include="API\XRates\Currency.vb" />
+    <Compile Include="API\XRates\DHXRateservice.vb" />
+    <Compile Include="API\XRates\IDHXRateservice.vb" />
+    <Compile Include="codebase\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="codebase\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="codebase\feedback.aspx.designer.vb">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="codebase\feedback.aspx.vb">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="codebase\tags.aspx.designer.vb">
+      <DependentUpon>tags.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="codebase\tags.aspx.vb">
+      <DependentUpon>tags.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="framework\BusinessObjects\Audit.vb" />
+    <Compile Include="framework\BusinessObjects\Category.vb" />
+    <Compile Include="framework\BusinessObjects\Collections.vb" />
+    <Compile Include="framework\BusinessObjects\CategorySource.vb" />
+    <Compile Include="framework\BusinessObjects\Enums.vb" />
+    <Compile Include="framework\BusinessObjects\Feedback.vb" />
+    <Compile Include="framework\BusinessObjects\FeedbackCategory.vb" />
+    <Compile Include="framework\BusinessObjects\FeedbackResponse.vb" />
+    <Compile Include="framework\BusinessObjects\Tags.vb" />
+    <Compile Include="framework\BusinessObjects\User.vb" />
+    <Compile Include="framework\BusinessObjects\Utility.vb" />
+    <Compile Include="framework\DataProvider\CategoryProvider.vb" />
+    <Compile Include="framework\DataProvider\CategorySourceProvider.vb" />
+    <Compile Include="framework\DataProvider\FeedbackProvider.vb" />
+    <Compile Include="framework\DataProvider\TagsProvider.vb" />
+    <Compile Include="framework\DataProvider\UserProvider.vb" />
+    <Compile Include="framework\JsonServices\data\GetFromDataBase.aspx.designer.vb">
+      <DependentUpon>GetFromDataBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="framework\JsonServices\data\GetFromDataBase.aspx.vb">
+      <DependentUpon>GetFromDataBase.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="framework\JsonServices\data\SaveToDataBase.aspx.designer.vb">
+      <DependentUpon>SaveToDataBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="framework\JsonServices\data\SaveToDataBase.aspx.vb">
+      <DependentUpon>SaveToDataBase.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\Export.aspx.designer.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\Export.aspx.vb">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\FileManagement.aspx.designer.vb">
+      <DependentUpon>FileManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\FileManagement.aspx.vb">
+      <DependentUpon>FileManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\JSONHelper.vb" />
+    <Compile Include="framework\JsonServices\utilities\ManageSession.aspx.designer.vb">
+      <DependentUpon>ManageSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\ManageSession.aspx.vb">
+      <DependentUpon>ManageSession.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\SendMail.aspx.designer.vb">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="framework\JsonServices\utilities\SendMail.aspx.vb">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="plugins\rating\img\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Libs\ML.Core\ML.Core.csproj">
+      <Project>{928720b4-670f-4f39-a212-aa9f235ed909}</Project>
+      <Name>ML.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2312</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DecisionHub</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Machine Learning - Data Modling and Training Controlled Browser</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".dummySite").click(function () {
+                $(".dummyIFrame").html("");
+                $(".dummyIFrame").html("<iframe id='CB' width='400' height='400'></iframe>");
+                $("#CB").attr("src", "https://www." + $(this).val() + ".com");
+            });
+
+            $(".dummyHistory").click(function () {
+                if ($(this).val() == "Prev")
+                    window.history.go(-1);
+                else
+                    window.history.go(1);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input class="dummySite" type="button" value="Google" />
+    <input class="dummySite" type="button" value="Microsoft" />
+    <input class="dummySite" type="button" value="Oracle" />
+    <input class="dummySite" type="button" value="Wipro" />
+    <br />
+    Iframe:
+    <br />
+    <input class="dummyHistory" type="button" value="Prev" />
+    <input class="dummyHistory" type="button" value="Next" />
+    <br />
+    <div class="dummyIFrame"></div>
+</body>
+</html>

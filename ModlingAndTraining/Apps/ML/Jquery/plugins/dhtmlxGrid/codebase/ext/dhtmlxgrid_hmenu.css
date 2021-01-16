@@ -1,0 +1,21 @@
+.dhx_header_cmenu{
+   background-color:#f0f6fe;
+   border:1px solid #718bb7;
+   z-index:2;
+   padding:3px 15px 3px 5px;
+  }
+ .dhx_header_cmenu_item{
+  white-space:nowrap;
+  font:normal 12px Arial, Helvetica, sans-serif;
+  line-height:20px;
+  border-bottom:0px solid #e0e0e0;
+ }
+/*.dhx_header_cmenu{
+   background-color:#ffffff;
+   border:2px outset silver;
+   z-index:2;
+  }
+ .dhx_header_cmenu_item{
+  white-space:nowrap;
+ }
+ */

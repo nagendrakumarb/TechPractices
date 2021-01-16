@@ -1,0 +1,167 @@
+div.gridbox_dhx_skyblue .xhdr{
+	background:#ccd797 url(../imgs/sky_blue_grid.gif) repeat-x top;	
+	/*background:#ccd797;
+	*/
+}
+
+div.gridbox_dhx_skyblue table.hdr tr{
+	/*background-image:url(../imgs/sky_blue_grid.gif);
+	background-position:0px -1px\9;*/
+	background:url(../imgs/sky_blue_grid.gif) left center;
+	background:#ccd797 url(../imgs/sky_blue_grid.gif) repeat-x top;		
+}
+
+body:nth-of-type(1) div.gridbox_dhx_skyblue table.hdr tr{
+	background-image:url(../imgs/sky_blue_grid.gif);
+	background-position:0px -1px;
+}
+
+div.gridbox_dhx_skyblue table.obj tr td{
+	font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border-width:0px 0px 0px 0px;
+	padding-right:4px;
+	padding-left:4px;
+}
+div.gridbox_dhx_skyblue table.hdr td div.hdrcell{
+	padding-left:10px;
+	width:auto;
+}
+html > body /**/ div.gridbox_dhx_skyblue table.hdr td div.hdrcell{
+	width=100%;
+}
+div.gridbox_dhx_skyblue table.hdr td {
+	border-width: 1px 1px 1px 1px;
+	/*border-color : #FDFDFD #A4BED4 #A4BED4 #FDFDFD;*/
+	border-color : #FDFDFD #d0d0d0 #d0d0d0 #FDFDFD;
+	background-color:transparent;
+	font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:white;
+	vertical-align:top;
+	text-align:left;
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+div.gridbox_dhx_skyblue {
+  border:1px solid  #d0d0d0;
+}
+div.gridbox table.obj tr  td{
+    padding-top:3px;
+    padding-bottom:3px;
+}
+* html .gridbox .obj td{
+    height:auto;
+    padding-top=3px;
+    padding-bottom=3px;
+}
+div.gridbox table.obj.row20px tr  td{
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+div.gridbox table.obj tr  td.editable{
+    padding:0px;
+    padding-left:3px;
+}
+div.gridbox table.obj tr  td.editable div.treegrid_cell{
+	padding-left:4px;
+	padding-top:1px;
+}
+div.gridbox_dhx_skyblue table.obj tr.rowselected{
+	background-color:#FFF1CC;
+}
+div.gridbox_dhx_skyblue table.obj tr.rowselected td{
+	background-color:#FFF1CC;
+	background-repeat:repeat-x;
+	background-position:0px 0px;	
+	background-image:url(../imgs/sky_blue_sel2.png);
+}
+/*RAM*/
+/*div.gridbox_dhx_skyblue table.obj.row20px tr.rowselected td{
+	background-repeat:repeat-x;
+	background-position:0px 0px;	
+	background-image:url(../imgs/sky_blue_sel.png);
+}
+*/
+div.gridbox_dhx_skyblue table.obj tr.rowselected td.cellselected {
+	background-color:#FFF1CC;
+}
+div.gridbox_dhx_skyblue .odd_dhx_skyblue, 
+div.gridbox_dhx_skyblue .ev_dhx_skyblue,
+div.gridbox_dhx_skyblue table.obj.row20px tr.rowselected td,
+.rowOver
+{
+	/*background-color:#E3EFFF;*/
+	background:#fff url(../imgs/rowLineBg.gif) repeat-x bottom;
+	background-position:0% -0px;
+	height:24px;
+}
+div.gridbox_dhx_skyblue table.obj.row20px tr.rowselected td{
+	background-position:0% -72px;
+}
+.rowOver
+{
+	background-position:0% -48px;
+}
+.dhx_combo_select, .gridbox_dhx_skyblue .dhx_combo_edit, .gridbox_dhx_skyblue .dhx_textarea{
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.gridbox_dhx_skyblue .dhx_combo_edit{
+	/*padding:1px 0px 1px 1px;*/
+	padding:3px 0px 1px 1px;
+}
+.gridbox_dhx_skyblue .dhx_sub_row {
+	background-color:transparent;
+}
+/*RAM CUSTOM*/
+.even,
+.uneven
+{
+    background:#fff url(../imgs/rowLineBg.gif) repeat-x bottom;
+	line-height:21px;
+	background-position:0% -0px;
+}
+.uneven{
+    /*background-position:0% -21px; alternate Bg*/
+    background-position:0% -0px;
+}
+.excelTextBox
+{
+	width:100%; 
+	font-size:12px; 
+	border:1px solid #999; 
+	line-height:20px; 
+	padding:0 2px; 
+	height:22px	
+}
+.excelNoBdr
+{
+    border:none;    
+}
+.excelImgContainer
+{
+	position:relative;
+	left:-19px;
+	top:1px;	
+}
+.excelReadOnlyCells
+{
+	color:#666;	
+}
+.excelCellNum
+{
+    background:#eee url(../imgs/excelCellNum-bg.gif) no-repeat right bottom;
+    height:24px;
+}
+.excelSelect
+{
+    height:22px;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	width:90%;
+}
+/**/

@@ -1,0 +1,16 @@
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\MachineLearning.DataModeling.dll.config
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\MachineLearning.DataModeling.dll
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\MachineLearning.DataModeling.pdb
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\MachineLearning.DataModeling.xml
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\ML.Core.dll
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\Newtonsoft.Json.dll
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\ML.Core.pdb
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\bin\Newtonsoft.Json.xml
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\ML.DataModeling.vbprojAssemblyReference.cache
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\Resources.resources
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\ML.DataModeling.vbproj.GenerateResource.cache
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\ML.DataModeling.vbproj.CoreCompileInputs.cache
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\ML.DataModeling.vbproj.CopyComplete
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\MachineLearning.DataModeling.dll
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\MachineLearning.DataModeling.xml
+D:\WorkingFolder\POCs\ModlingAndTraining\Apps\ML\Jquery\obj\Debug\MachineLearning.DataModeling.pdb

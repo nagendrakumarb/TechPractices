@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{928720B4-670F-4F39-A212-AA9F235ED909}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ML.Core</RootNamespace>
+    <AssemblyName>ML.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.10\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\dhApp\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.OracleClient.1.0.8\lib\netstandard2.0\System.Data.OracleClient.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Configuration\Data\DataConfiguration.cs" />
+    <Compile Include="Core\Configuration\Data\DbConnection.cs" />
+    <Compile Include="Core\Configuration\Data\DbConnectionCollection.cs" />
+    <Compile Include="Core\Configuration\Data\DbConnectionSection.cs" />
+    <Compile Include="Core\Configuration\Keys\ApplicationKey.cs" />
+    <Compile Include="Core\Configuration\Keys\applicationKeyCollection.cs" />
+    <Compile Include="Core\Configuration\Keys\ApplicationKeyConfiguration.cs" />
+    <Compile Include="Core\Configuration\Keys\applicationKeySection.cs" />
+    <Compile Include="Core\Exception\BaseExcepion.cs" />
+    <Compile Include="Core\Exception\ErrorLevel.cs" />
+    <Compile Include="Core\Exception\ExceptionCode.cs" />
+    <Compile Include="Core\Exception\HADataException.cs" />
+    <Compile Include="Core\Exception\HAException.cs" />
+    <Compile Include="Core\Exception\OperationError.cs" />
+    <Compile Include="Core\Exception\OperationResult.cs" />
+    <Compile Include="Core\Security\CryptographyExtensionMethods.cs" />
+    <Compile Include="Core\SSO\1getAssertionForAnyUserWithAttributesCompletedEvent.cs" />
+    <Compile Include="Core\SSO\addAndActivateUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addAndActivateUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\addChildOrganizationCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addChildOrganizationCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\addFederationMapCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addFederationMapCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\addIdentityProviderCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addIdentityProviderCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\addOrganizationCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addOrganizationCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\addServiceProviderCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addServiceProviderCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\addUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\addUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\applicationDetails.cs" />
+    <Compile Include="Core\SSO\applicationField.cs" />
+    <Compile Include="Core\SSO\applicationFieldListResult.cs" />
+    <Compile Include="Core\SSO\applicationListResult.cs" />
+    <Compile Include="Core\SSO\attributeMapping.cs" />
+    <Compile Include="Core\SSO\auditEvent.cs" />
+    <Compile Include="Core\SSO\autoEnrollUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\autoEnrollUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\deleteFederationMapCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\deleteFederationMapCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\deleteIdentityProviderCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\deleteIdentityProviderCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\deleteServiceProviderCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\deleteServiceProviderCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\deleteUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\deleteUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\disableUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\disableUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\enableUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\enableUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\eventLogResult.cs" />
+    <Compile Include="Core\SSO\federationMapDetails.cs" />
+    <Compile Include="Core\SSO\federationMapListResult.cs" />
+    <Compile Include="Core\SSO\getAllAppsForOrgCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAllAppsForOrgCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getApplicationFieldsCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getApplicationFieldsCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getApplicationFieldsForUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getApplicationFieldsForUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getAppsCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAppsCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getAppsForUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAppsForUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getAssertionCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAssertionCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getAssertionForAnyUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAssertionForAnyUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getAssertionForAnyUserWithAttributesCompletedEvent.cs" />
+    <Compile Include="Core\SSO\getAssertionForUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAssertionForUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getAuditReportCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getAuditReportCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getCaptchaSessionCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getCaptchaSessionCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getCustomUserDataCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getCustomUserDataCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getFederationMapCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getFederationMapCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getIdentityProvidersCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getIdentityProvidersCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getProfileCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getProfileCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getServiceProvidersCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getServiceProvidersCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\getUserProfileCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\getUserProfileCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\identityProviderDetails.cs" />
+    <Compile Include="Core\SSO\identityProviderListResult.cs" />
+    <Compile Include="Core\SSO\modifyDirectoryIntegrationCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\modifyDirectoryIntegrationCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\modifyIdentityProviderCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\modifyIdentityProviderCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\modifyServiceProviderCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\modifyServiceProviderCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\molResult.cs" />
+    <Compile Include="Core\SSO\MyOneLoginService.cs" />
+    <Compile Include="Core\SSO\nameValuePair.cs" />
+    <Compile Include="Core\SSO\orgResult.cs" />
+    <Compile Include="Core\SSO\searchUsersCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\searchUsersCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\serviceProviderDetails.cs" />
+    <Compile Include="Core\SSO\serviceProviderListResult.cs" />
+    <Compile Include="Core\SSO\setApplicationFieldsCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\setApplicationFieldsCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\setApplicationFieldsForUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\setApplicationFieldsForUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\setCustomUserDataCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\setCustomUserDataCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\setProfileCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\setProfileCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\setUserProfileCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\setUserProfileCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\signInCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\signInCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\signinResult.cs" />
+    <Compile Include="Core\SSO\signOutCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\signOutCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\subscribeToAppCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\subscribeToAppCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\subscribeUserToAppCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\subscribeUserToAppCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\tokenResult.cs" />
+    <Compile Include="Core\SSO\tokenResultEntry.cs" />
+    <Compile Include="Core\SSO\unsubscribeFromAppCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\unsubscribeFromAppCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\unsubscribeUserFromAppCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\unsubscribeUserFromAppCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\userDetails.cs" />
+    <Compile Include="Core\SSO\userListResult.cs" />
+    <Compile Include="Core\SSO\validateAssertionByIdCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\validateAssertionByIdCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\validateAssertionByNameCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\validateAssertionByNameCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\validateAssertionCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\validateAssertionCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\validateNewOrgNameCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\validateNewOrgNameCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\validateTokenCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\validateTokenCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\validateUserCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\validateUserCompletedEventHandler.cs" />
+    <Compile Include="Core\SSO\verifyUserExistsCompletedEventArgs.cs" />
+    <Compile Include="Core\SSO\verifyUserExistsCompletedEventHandler.cs" />
+    <Compile Include="Core\Utilities\AppKeys.cs" />
+    <Compile Include="Core\Utilities\General.cs" />
+    <Compile Include="Core\Utilities\GeneralExtensionMethods.cs" />
+    <Compile Include="Data\BaseModel.cs" />
+    <Compile Include="Data\CommandHelper\BaseDbHelper.cs" />
+    <Compile Include="Data\CommandHelper\DbFactory.cs" />
+    <Compile Include="Data\CommandHelper\MSSQLHelper.cs" />
+    <Compile Include="Data\CommandHelper\OracleHelper.cs" />
+    <Compile Include="Data\QueryParameter.cs" />
+    <Compile Include="Data\QueryParameterDirection.cs" />
+    <Compile Include="Data\QueryType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
