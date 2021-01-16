@@ -1,0 +1,38 @@
+Practice -
+Practice -Using Angular Component in Blazer App as JavaScript Element
+ Blazor Redux, Local db, instead of polling use Mediator pattern where service comes and reads the Localdb update and acheive decentralizationm Sql server DTC sync
+Understand on -Reporting Services , 
+              Telerik Reporting Tools -KPIs
+               Pivot, Cubes, Roles  
+               WCF core -open
+               Extend SQLServer Pivot, Cubes, Roles with Python/R 
+               Distributed Cache for SSRs   
+               LocalDB   
+                Mdx - Complied Queries
+               Normalization rules
+               Document DB/NO-SQL Servers-Azure Server less + 
+                Cosmos DB- Connect
+                SQL Server JSON Type, Connect with any No SQL
+
+	Practice - Understand on -Reporting Services , Telerik Reporting Tools -KPIs, Pivot, Cubes, Roles Understand on Monolithic vs Microservice architecture(Onion), Polling vs Mediator patterns, Decentralization
+
+Exception reports, ETL, charts-
+general 9 to 6
+morning 6 
+ 2
+10 10
+shif allowance -400
+
+Vijay Anand
+vanand@osidigital.com
+1 day per month
+18 per annum probation
+25 days per annum 3 years 
+C:\Users\nbattiprolu\AppData\Roaming\npm
+
+
+http://localhost:4200/adjuster/addMember
+http://localhost:4200/adjuster/member
+
+
+
