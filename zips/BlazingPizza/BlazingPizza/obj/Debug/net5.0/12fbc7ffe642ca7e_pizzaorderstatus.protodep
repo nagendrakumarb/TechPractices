@@ -1,0 +1,2 @@
+obj\Debug\net5.0/Pizzaorderstatus.cs \
+obj\Debug\net5.0/PizzaorderstatusGrpc.cs: Protos/pizzaorderstatus.proto

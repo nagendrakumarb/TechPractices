@@ -1,0 +1,8 @@
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\bin\Debug\netstandard2.1\BlazingPizza.Shared.deps.json
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\bin\Debug\netstandard2.1\BlazingPizza.Shared.dll
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\bin\Debug\netstandard2.1\BlazingPizza.Shared.pdb
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\obj\Debug\netstandard2.1\BlazingPizza.Shared.AssemblyInfoInputs.cache
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\obj\Debug\netstandard2.1\BlazingPizza.Shared.AssemblyInfo.cs
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\obj\Debug\netstandard2.1\BlazingPizza.Shared.csproj.CoreCompileInputs.cache
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\obj\Debug\netstandard2.1\BlazingPizza.Shared.dll
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.Shared\obj\Debug\netstandard2.1\BlazingPizza.Shared.pdb

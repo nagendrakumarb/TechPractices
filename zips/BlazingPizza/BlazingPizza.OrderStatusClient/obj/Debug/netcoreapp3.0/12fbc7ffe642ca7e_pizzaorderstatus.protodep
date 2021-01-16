@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.0\Protos/Pizzaorderstatus.cs \
+obj\Debug\netcoreapp3.0\Protos/PizzaorderstatusGrpc.cs: Protos/pizzaorderstatus.proto

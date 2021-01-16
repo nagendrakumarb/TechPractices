@@ -1,0 +1,15 @@
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.deps.json
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.runtimeconfig.json
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.runtimeconfig.dev.json
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.dll
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.pdb
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.Shared.dll
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\bin\Debug\netcoreapp3.0\BlazingPizza.Shared.pdb
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.csprojAssemblyReference.cache
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.AssemblyInfoInputs.cache
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.AssemblyInfo.cs
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.csproj.CoreCompileInputs.cache
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.csproj.CopyComplete
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.dll
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.pdb
+D:\WorkingFolder\POCs\zips\BlazingPizza\BlazingPizza.OrderStatusClient\obj\Debug\netcoreapp3.0\BlazingPizza.OrderStatusClient.genruntimeconfig.cache

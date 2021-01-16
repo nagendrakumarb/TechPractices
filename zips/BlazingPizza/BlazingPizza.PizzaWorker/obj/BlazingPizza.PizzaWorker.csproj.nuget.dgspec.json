@@ -1,0 +1,250 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.PizzaWorker\\BlazingPizza.PizzaWorker.csproj": {}
+  },
+  "projects": {
+    "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.OrderStatusClient\\BlazingPizza.OrderStatusClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.OrderStatusClient\\BlazingPizza.OrderStatusClient.csproj",
+        "projectName": "BlazingPizza.OrderStatusClient",
+        "projectPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.OrderStatusClient\\BlazingPizza.OrderStatusClient.csproj",
+        "packagesPath": "C:\\Users\\nbattiprolu\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.OrderStatusClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nbattiprolu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
+            "projectReferences": {
+              "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj": {
+                "projectPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.33.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.PizzaWorker\\BlazingPizza.PizzaWorker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.PizzaWorker\\BlazingPizza.PizzaWorker.csproj",
+        "projectName": "BlazingPizza.PizzaWorker",
+        "projectPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.PizzaWorker\\BlazingPizza.PizzaWorker.csproj",
+        "packagesPath": "C:\\Users\\nbattiprolu\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.PizzaWorker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nbattiprolu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
+            "projectReferences": {
+              "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.OrderStatusClient\\BlazingPizza.OrderStatusClient.csproj": {
+                "projectPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.OrderStatusClient\\BlazingPizza.OrderStatusClient.csproj"
+              },
+              "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj": {
+                "projectPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj",
+        "projectName": "BlazingPizza.Shared",
+        "projectPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\BlazingPizza.Shared.csproj",
+        "packagesPath": "C:\\Users\\nbattiprolu\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkingFolder\\POCs\\zips\\BlazingPizza\\BlazingPizza.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nbattiprolu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "None",
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

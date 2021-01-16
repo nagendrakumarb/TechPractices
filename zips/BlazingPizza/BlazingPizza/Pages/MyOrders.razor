@@ -1,0 +1,41 @@
+﻿@page "/myorders"
+@layout ForceSignInLayout
+@inject IPizzaStore Store
+
+<div class="main">
+    <TemplatedList Loader="@LoadOrders" ListGroupClass="orders-list">
+        <LoadingContent><text>Loading...</text></LoadingContent>
+        <EmptyContent>
+            <h2>No orders placed</h2>
+            <a class="btn btn-success" href="">Order some pizza</a>
+        </EmptyContent>
+        <ItemContent Context="item">
+            <div class="col">
+                <h5>@item.CreatedTime.ToLongDateString()</h5>
+                Items:
+                <strong>@item.Pizzas.Count()</strong>;
+                Total price:
+                <strong>£@item.GetFormattedTotalPrice()</strong>
+            </div>
+            <div class="col">
+                Status: <strong>@item.Status</strong>
+            </div>
+            <div class="col flex-grow-0">
+                <a href="myorders/@item.RequestId" class="btn btn-success">
+                    Track &gt;
+                </a>
+            </div>
+        </ItemContent>
+    </TemplatedList>
+</div>
+
+@code {
+    [CascadingParameter] UserStateProvider UserState { get; set; }
+
+
+    async Task<List<Order>> LoadOrders()
+    {
+        await Task.Delay(3000); // Wait for the Pizza Worker to save the order
+        return await Store.GetOrders(UserState.CurrentUser.DisplayName);
+    }
+}
